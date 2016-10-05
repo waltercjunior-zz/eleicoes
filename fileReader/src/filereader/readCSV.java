@@ -13,12 +13,6 @@ import java.io.IOException;
  *
  * @author wgjunior
  * 
- * "1.0.16.0","1.0.31.255","16781312","16785407","JP","Japão"
-"1.0.32.0","1.0.63.255","16785408","16793599","BR","Brasil"
-"1.0.64.0","1.0.127.255","16793600","16809983","JP","Japão"
-"1.0.128.0","1.0.255.255","16809984","16842751","DK","Dinamarca"
- * 
- * 
  */
 class readCSV {
     
@@ -33,49 +27,28 @@ class readCSV {
                 int vl = 0;
                 String[] dado = linha.split(cvsDivisor);
                 System.out.println(                
-"DATA_GERACAO = " + dado[vl]
-+ " , HORA_GERACAO = " + dado[vl++]
-+ " , ANO_ELEICAO = " + dado[vl++]
-+ " , NUM_TURNO = " + dado[vl++]
-+ " , DESCRICAO_ELEICAO = " + dado[vl++]
-+ " , SIGLA_UE = " + dado[vl++]
-+ " , DESCRICAO_UE = " + dado[vl++]
-+ " , CODIGO_CARGO = " + dado[vl++]
-+ " , DESCRICAO_CARGO = " + dado[vl++]
-+ " , NOME_CANDIDATO = " + dado[vl++]
-+ " , SEQUENCIAL_CANDIDATO = " + dado[vl++]
-+ " , NUMERO_CANDIDATO = " + dado[vl++]
-+ " , NOME_URNA_CANDIDATO = " + dado[vl++]
-+ " , COD_SITUACAO_CANDIDATURA = " + dado[vl++]
-+ " , DES_SITUACAO_CANDIDATURA = " + dado[vl++]
-+ " , NUMERO_PARTIDO = " + dado[vl++]
-+ " , SIGLA_PARTIDO = " + dado[vl++]
-+ " , NOME_PARTIDO = " + dado[vl++]
-+ " , CODIGO_LEGENDA = " + dado[vl++]
-+ " , SIGLA_LEGENDA = " + dado[vl++]
-+ " , COMPOSICAO_LEGENDA = " + dado[vl++]
-+ " , NOME_LEGENDA = " + dado[vl++]
-+ " , CODIGO_OCUPACAO = " + dado[vl++]
-+ " , DESCRICAO_OCUPACAO = " + dado[vl++]
-+ " , DATA_NASCIMENTO = " + dado[vl++]
-+ " , NUM_TITULO_ELEITORAL_CANDIDATO = " + dado[vl++]
-+ " , IDADE_DATA_ELEICAO = " + dado[vl++]
-+ " , CODIGO_SEXO = " + dado[vl++]
-+ " , DESCRICAO_SEXO = " + dado[vl++]
-+ " , COD_GRAU_INSTRUCAO = " + dado[vl++]
-+ " , DESCRICAO_GRAU_INSTRUCAO = " + dado[vl++]
-+ " , CODIGO_ESTADO_CIVIL = " + dado[vl++]
-+ " , DESCRICAO_ESTADO_CIVIL = " + dado[vl++]
-+ " , CODIGO_NACIONALIDADE = " + dado[vl++]
-+ " , DESCRICAO_NACIONALIDADE = " + dado[vl++]
-+ " , SIGLA_UF_NASCIMENTO = " + dado[vl++]
-+ " , CODIGO_MUNICIPIO_NASCIMENTO = " + dado[vl++]
-+ " , NOME_MUNICIPIO_NASCIMENTO = " + dado[vl++]
-+ " , DESPESA_MAX_CAMPANHA = " + dado[vl++]
-+ " , COD_SIT_TOT_TURNO = " + dado[vl++]
-+ " , DESC_SIT_TOT_TURNO = " + dado[vl++]);
+"DATA_GERACAO = " + dado[0] + " , HORA_GERACAO = " + dado[1]
++ " , ANO_ELEICAO = " + dado[2] + " , NUM_TURNO = " + dado[3]
++ " , DESCRICAO_ELEICAO = " + dado[4] + " , SIGLA_UF = " + dado[5]
++ " , SIGLA_UE = " + dado[6] + " , DESCRICAO_UE = " + dado[7]
++ " , CODIGO_CARGO = " + dado[8] + " , DESCRICAO_CARGO = " + dado[9]
++ " , NOME_CANDIDATO = " + dado[10] + " , SEQUENCIAL_CANDIDATO = " + dado[11]
++ " , NUMERO_CANDIDATO = " + dado[12] + " , NOME_URNA_CANDIDATO = " + dado[13]
++ " , COD_SITUACAO_CANDIDATURA = " + dado[14] + " , DES_SITUACAO_CANDIDATURA = " + dado[15]
++ " , NUMERO_PARTIDO = " + dado[16] + " , SIGLA_PARTIDO = " + dado[17]
++ " , NOME_PARTIDO = " + dado[18] + " , CODIGO_LEGENDA = " + dado[19]
++ " , SIGLA_LEGENDA = " + dado[20] + " , COMPOSICAO_LEGENDA = " + dado[21]
++ " , NOME_LEGENDA = " + dado[22] + " , CODIGO_OCUPACAO = " + dado[23]
++ " , DESCRICAO_OCUPACAO = " + dado[24] + " , DATA_NASCIMENTO = " + dado[25]
++ " , NUM_TITULO_ELEITORAL_CANDIDATO = " + dado[26] + " , IDADE_DATA_ELEICAO = " + dado[27]
++ " , CODIGO_SEXO = " + dado[28] + " , DESCRICAO_SEXO = " + dado[29]
++ " , COD_GRAU_INSTRUCAO = " + dado[30] + " , DESCRICAO_GRAU_INSTRUCAO = " + dado[31]
++ " , CODIGO_ESTADO_CIVIL = " + dado[32] + " , DESCRICAO_ESTADO_CIVIL = " + dado[33]
++ " , CODIGO_NACIONALIDADE = " + dado[34] + " , DESCRICAO_NACIONALIDADE = " + dado[35]
++ " , SIGLA_UF_NASCIMENTO = " + dado[36] + " , CODIGO_MUNICIPIO_NASCIMENTO = " + dado[37]
++ " , NOME_MUNICIPIO_NASCIMENTO = " + dado[38] + " , DESPESA_MAX_CAMPANHA = " + dado[39]
++ " , COD_SIT_TOT_TURNO = " + dado[40] + " , DESC_SIT_TOT_TURNO = " + dado[41]);
             }
-
             
         } catch (FileNotFoundException e){
             e.printStackTrace();
