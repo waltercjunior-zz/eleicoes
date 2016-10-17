@@ -15,7 +15,7 @@ import java.io.IOException;
 public class FileReader {
 
     //private String diretorio = "C:\\Users\\wgjunior\\Desktop\\Eleições\\votacao_candidato_munzona";
-    private String diretorio = "C:\\Users\\wgjunior\\Desktop\\Eleições\\consulta_cand";
+    private String diretorio = "C:\\Users\\wgjunior\\Desktop\\Eleições\\Dados\\Resultados";
     //private String diretorio = "C:\\Users\\wgjunior\\Desktop\\Eleições\\Universo";
     
     public FileReader() throws IOException{
@@ -25,8 +25,10 @@ public class FileReader {
         for (int j = afile.length; i<j; i++){
             File arquivos = afile[i];
             System.out.println("Lendo arquivo: "+ arquivos.getName());
-            readCSV rscv = new readCSV(arquivos.getAbsolutePath());
-            //i = j;
+            
+            Unzip zp = new Unzip(arquivos.getAbsoluteFile().toString());
+            //readCSV rscv = new readCSV(arquivos.getAbsolutePath());
+            i = j;
             
         }
         
