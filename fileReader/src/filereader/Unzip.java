@@ -43,6 +43,12 @@ public class Unzip {
                 }
                 System.out.println("Descompactando arquivo: " + entry.getName());
                 copyInputStream(zipFile.getInputStream(entry), new BufferedOutputStream(new FileOutputStream(entry.getName())));
+                
+                File fl1 = new File(entry.getName());
+                System.out.println("Caminho absoluto em: " + fl1.getAbsolutePath());
+                
+                readCSV rCSV = new readCSV(fl1.getAbsoluteFile().toString());
+                
             }   
             zipFile.close();
         } catch(IOException ioe){
